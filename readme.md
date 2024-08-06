@@ -1,6 +1,10 @@
 # Relatório
 
+## Instruções
 *Considerar apenas o arquivo* `teste_duckdb.py` para correção.
+Instale as bibliotecas em um env, com `python3 -m pip install -r requirements.txt`
+
+## Introdução
 
 Testamos a leitura e processamento usando duas bibliotecas que tem sido mais eficientes do que Pandas em benchmarks recentes: DuckDB, um banco de dados analítico "in-process", e Polars, um novo DataFrame escrito em Rust.
 

@@ -1,5 +1,7 @@
 # Relatório
 
+*Considerar apenas o arquivo* `teste_duckdb.py` para correção.
+
 Testamos a leitura e processamento usando duas bibliotecas que tem sido mais eficientes do que Pandas em benchmarks recentes: DuckDB, um banco de dados analítico "in-process", e Polars, um novo DataFrame escrito em Rust.
 
 Vamos começar por DuckDB. Como é "in-process", ele carrega os arquivos em memória; para evitar esse comportamento e permitir "larger-than-memory workloads" (`https://duckdb.org/docs/guides/performance/how_to_tune_workloads`), estabelecemos um `temp_directory`: assim os processos que excederem a memória do sistema são distribuídos pro disco.
